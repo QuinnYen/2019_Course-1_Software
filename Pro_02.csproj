@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{962FD073-A587-494F-B46B-C10D508E26D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pro_02</RootNamespace>
+    <AssemblyName>Pro_02</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Block.cs" />
+    <Compile Include="Class\Constants.cs" />
+    <Compile Include="Class\Enumerations.cs" />
+    <Compile Include="Form\Story.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Story.Designer.cs">
+      <DependentUpon>Story.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TrapGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TrapGame.Designer.cs">
+      <DependentUpon>TrapGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FingerGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FingerGame.Designer.cs">
+      <DependentUpon>FingerGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\WinMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\WinMsg.Designer.cs">
+      <DependentUpon>WinMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GuessGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GuessGame.Designer.cs">
+      <DependentUpon>GuessGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\EventBadMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\EventBadMsg.Designer.cs">
+      <DependentUpon>EventBadMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\RedMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\RedMsg.Designer.cs">
+      <DependentUpon>RedMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\PurpleMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PurpleMsg.Designer.cs">
+      <DependentUpon>PurpleMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\BlueMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\BlueMsg.Designer.cs">
+      <DependentUpon>BlueMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\YellowMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\YellowMsg.Designer.cs">
+      <DependentUpon>YellowMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SwampMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SwampMsg.Designer.cs">
+      <DependentUpon>SwampMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\LionMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\LionMsg.Designer.cs">
+      <DependentUpon>LionMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FoxMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FoxMsg.Designer.cs">
+      <DependentUpon>FoxMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\EventGoodMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\EventGoodMsg.Designer.cs">
+      <DependentUpon>EventGoodMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Player.cs" />
+    <Compile Include="Class\Program.cs" />
+    <Compile Include="Form\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BlockClass\StartBlock.cs" />
+    <Compile Include="BlockClass\SwampBlock.cs" />
+    <Compile Include="BlockClass\RedBlock.cs" />
+    <Compile Include="BlockClass\PurpleBlock.cs" />
+    <Compile Include="BlockClass\TrapBlock.cs" />
+    <Compile Include="BlockClass\FoxBlock.cs" />
+    <Compile Include="BlockClass\MonkeyBlock.cs" />
+    <Compile Include="BlockClass\LionBlock.cs" />
+    <Compile Include="BlockClass\ManBlock.cs" />
+    <Compile Include="BlockClass\BlueBlock.cs" />
+    <Compile Include="BlockClass\YellowBlock.cs" />
+    <Compile Include="BlockClass\EventBlock.cs" />
+    <EmbeddedResource Include="Form\Map.en.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Story.resx">
+      <DependentUpon>Story.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TrapGame.resx">
+      <DependentUpon>TrapGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FingerGame.resx">
+      <DependentUpon>FingerGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\WinMsg.resx">
+      <DependentUpon>WinMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GuessGame.resx">
+      <DependentUpon>GuessGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\EventBadMsg.resx">
+      <DependentUpon>EventBadMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\RedMsg.resx">
+      <DependentUpon>RedMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\PurpleMsg.resx">
+      <DependentUpon>PurpleMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\BlueMsg.resx">
+      <DependentUpon>BlueMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\YellowMsg.resx">
+      <DependentUpon>YellowMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SwampMsg.resx">
+      <DependentUpon>SwampMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\LionMsg.resx">
+      <DependentUpon>LionMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FoxMsg.resx">
+      <DependentUpon>FoxMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\EventGoodMsg.resx">
+      <DependentUpon>EventGoodMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AU_Test.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map_Ver2.1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map_Ver2.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S_4P.bmp" />
+    <None Include="Resources\S_3P.bmp" />
+    <None Include="Resources\S_2P.bmp" />
+    <None Include="Resources\S_1P.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\event.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AU_Test02.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monkey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win_party.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BP_00.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
